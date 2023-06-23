@@ -1,0 +1,34 @@
+{
+  "name": "@novorender/measure-api",
+  "version": "0.0.143",
+  "description": "Novorender measure api",
+  "type": "module",
+  "typings": "index.d.ts",
+  "browser": "build/main.js",
+  "scripts": {
+    "build:test": "node build_test.js",
+    "build:bundle": "node build_bundle.js",
+    "prepublishOnly": "npm run build:bundle",
+    "serve": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novorender/measure-api.git"
+  },
+  "author": "Novorender AS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/novorender/measure-api/issues"
+  },
+  "homepage": "https://github.com/novorender/measure-api#readme",
+  "dependencies": {
+    "@novorender/webgl-api": "^0.3.84",
+    "comlink": "^4.3.1",
+    "gl-matrix": "^3.4.3",
+    "tslib": "^2.4.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.39",
+    "typescript": "^4.7.2"
+  }
+}
